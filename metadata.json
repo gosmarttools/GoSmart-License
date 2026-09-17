@@ -1,0 +1,6 @@
+{
+  "name": "GoSmart License Manager",
+  "description": "Portal aktivasi dan validasi lisensi template serta sistem digital resmi PT. GoSmart Teknologi Creative & Tuanbagues.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

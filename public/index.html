@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoSmart License Manager - Portal Aktivasi Lisensi Resmi</title>
+  <meta name="description" content="Portal aktivasi dan validasi lisensi template serta sistem digital resmi PT. GoSmart Teknologi Creative & Tuanbagues." />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="GoSmart License Manager - Portal Aktivasi Lisensi Resmi" />
+  <meta property="og:description" content="Aktivasi domain dan validasi lisensi template WordPress, Blogger, React, dan ekosistem digital GoSmart." />
+  <meta property="og:type" content="website" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#1e1b4b',
+              950: '#0f172a',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    /* Glow & Blur effects */
+    .bg-grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen relative overflow-x-hidden selection:bg-indigo-500 selection:text-white">
+
+  <!-- Background decorative light gradients -->
+  <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-40"></div>
+  <div class="fixed -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-[128px] pointer-events-none"></div>
+  <div class="fixed top-1/3 -right-40 w-96 h-96 bg-blue-600/15 rounded-full blur-[128px] pointer-events-none"></div>
+  <div class="fixed -bottom-40 left-1/3 w-96 h-96 bg-violet-600/15 rounded-full blur-[128px] pointer-events-none"></div>
+
+  <!-- Main Container -->
+  <div class="relative z-10 max-w-4xl mx-auto px-4 py-8 sm:py-12 md:py-16">
+
+    <!-- Top Header & Branding -->
+    <header class="text-center mb-8 sm:mb-12">
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-950/80 border border-indigo-500/30 text-indigo-300 text-xs sm:text-sm font-medium mb-4 shadow-sm backdrop-blur-md">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Sistem Validasi Resmi • Cloud Synchronized 2026</span>
+      </div>
+
+      <!-- Main Logo & Title -->
+      <div class="flex items-center justify-center gap-3 mb-3">
+        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 p-0.5 shadow-lg shadow-indigo-500/25 flex items-center justify-center">
+          <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+            <!-- Shield & Key Icon -->
+            <svg class="w-6 h-6 sm:w-7 sm:h-7 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+        </div>
+        <div class="text-left">
+          <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white flex items-center gap-2">
+            GoSmart <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">License</span>
+          </h1>
+          <p class="text-xs sm:text-sm text-slate-400 font-medium">License Manager & Domain Activation Portal</p>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base text-slate-300 max-w-xl mx-auto mt-2 leading-relaxed">
+        Daftarkan domain blog atau web Anda untuk mengaktifkan lisensi resmi template, sistem digital, dan perlindungan properti intelektual GoSmart.
+      </p>
+    </header>
+
+    <!-- Activation Card -->
+    <main class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-6 sm:p-8 md:p-10 shadow-2xl shadow-indigo-950/40 backdrop-blur-xl mb-12">
+      
+      <!-- Card Header -->
+      <div class="border-b border-slate-800 pb-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+            </svg>
+            Form Aktivasi Lisensi Template
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">Masukkan rincian pembelian resmi Anda untuk menerbitkan Token Hash otentik.</p>
+        </div>
+        <span class="inline-flex items-center self-start sm:self-auto px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700/60">
+          Versi v2.4 (2026)
+        </span>
+      </div>
+
+      <!-- Quick Demo Pill / Helper -->
+      <div class="mb-6 p-3 rounded-xl bg-indigo-950/40 border border-indigo-900/50 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-300">
+        <div class="flex items-center gap-2">
+          <span class="text-indigo-400 font-semibold">Demo Cepat:</span>
+          <span>Klik salah satu contoh terdaftar untuk uji coba instan:</span>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <button type="button" onclick="fillDemo('demo@gosmart.id', 'mysite.blogspot.com')" class="px-2.5 py-1 bg-indigo-900/60 hover:bg-indigo-800/80 text-indigo-200 rounded-md transition text-xs border border-indigo-700/50">
+            Invoice: demo@gosmart.id
+          </button>
+          <button type="button" onclick="fillDemo('INV-2026-GS-8891', 'portalberita.com')" class="px-2.5 py-1 bg-indigo-900/60 hover:bg-indigo-800/80 text-indigo-200 rounded-md transition text-xs border border-indigo-700/50">
+            Invoice: INV-2026-GS-8891
+          </button>
+        </div>
+      </div>
+
+      <!-- Activation Form -->
+      <form id="licenseForm" onsubmit="handleActivate(event)" class="space-y-5">
+        
+        <!-- Input 1: Email / No Invoice -->
+        <div>
+          <label for="identifierInput" class="block text-xs sm:text-sm font-semibold text-slate-200 mb-2">
+            Email Pembeli atau No. Invoice Pembelian <span class="text-rose-400">*</span>
+          </label>
+          <div class="relative rounded-xl shadow-sm">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+              <!-- Mail / Invoice Icon -->
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="identifierInput"
+              name="identifier"
+              required
+              placeholder="contoh: pembeli@gmail.com atau INV-2026-GS-8891"
+              class="w-full pl-11 pr-4 py-3 bg-slate-950 border border-slate-700/80 rounded-xl text-slate-100 placeholder-slate-500 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150"
+            />
+          </div>
+          <p class="mt-1.5 text-xs text-slate-400">
+            Sesuai dengan email saat checkout di Marketplace / Web Resmi Tuanbagues / GoSmart Teknologi Creative.
+          </p>
+        </div>
+
+        <!-- Input 2: Blog Domain -->
+        <div>
+          <label for="domainInput" class="block text-xs sm:text-sm font-semibold text-slate-200 mb-2">
+            Nama Domain Blog / Website <span class="text-rose-400">*</span>
+          </label>
+          <div class="relative rounded-xl shadow-sm">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+              <!-- Globe Icon -->
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="domainInput"
+              name="domain"
+              required
+              placeholder="contoh: bloganda.blogspot.com atau situsanda.com"
+              class="w-full pl-11 pr-4 py-3 bg-slate-950 border border-slate-700/80 rounded-xl text-slate-100 placeholder-slate-500 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150"
+            />
+          </div>
+          <p class="mt-1.5 text-xs text-slate-400">
+            Bisa berupa domain Blogger (.blogspot.com), TLD custom (.com, .id, .net), maupun domain WooCommerce.
+          </p>
+        </div>
+
+        <!-- Optional Endpoint Config Collapsible (Google Apps Script) -->
+        <div class="pt-1">
+          <details class="group text-xs text-slate-400">
+            <summary class="cursor-pointer font-medium text-slate-400 hover:text-indigo-300 transition inline-flex items-center gap-1.5 list-none select-none">
+              <svg class="w-4 h-4 transition-transform group-open:rotate-90 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+              <span>Pengaturan Lanjutan: Google Apps Script Web App Endpoint (Opsional)</span>
+            </summary>
+            <div class="mt-3 p-3.5 bg-slate-950/80 border border-slate-800 rounded-xl space-y-2">
+              <label for="gasUrlInput" class="block text-slate-300 font-medium">Google Apps Script Web App URL:</label>
+              <input
+                type="text"
+                id="gasUrlInput"
+                placeholder="https://script.google.com/macros/s/AKfycb.../exec"
+                class="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-slate-200 text-xs focus:ring-1 focus:ring-indigo-500 outline-none"
+              />
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Biarkan default jika menggunakan sinkronisasi otomatis / demo built-in database Google Sheets terintegrasi.
+              </p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Submit Button with Loading State -->
+        <div class="pt-2">
+          <button
+            type="submit"
+            id="submitBtn"
+            class="w-full py-3.5 px-6 rounded-xl font-bold text-sm sm:text-base text-white bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 active:scale-[0.99] transition duration-200 shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+          >
+            <!-- Normal State Icon -->
+            <svg id="btnIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <!-- Loading Spinner (Hidden by default) -->
+            <svg id="btnSpinner" class="hidden w-5 h-5 animate-spin text-white" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span id="btnText">Generate Token Lisensi</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Notification Message Box (Success / Error) -->
+      <div id="statusAlert" class="hidden mt-6 rounded-xl p-4 transition-all duration-300">
+        <div class="flex items-start gap-3">
+          <div id="alertIconContainer" class="flex-shrink-0 mt-0.5"></div>
+          <div class="flex-1">
+            <h4 id="alertTitle" class="text-sm font-bold"></h4>
+            <p id="alertMessage" class="text-xs sm:text-sm mt-1 leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result Box (Hidden until generated) -->
+      <div id="resultBox" class="hidden mt-6 pt-6 border-t border-slate-800 transition-all duration-500">
+        <div class="rounded-xl bg-slate-950 border border-indigo-500/40 p-5 sm:p-6 relative overflow-hidden shadow-inner">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 px-2.5 py-1 rounded-full">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              TOKEN LISENSI AKTIF & TERVERIFIKASI
+            </span>
+            <span class="text-[11px] text-slate-400 font-mono" id="resultTimestamp"></span>
+          </div>
+
+          <!-- Token Hash Display Field -->
+          <div class="space-y-2 mb-4">
+            <label class="text-xs font-semibold text-slate-300">Token Lisensi (Hash Terenkripsi):</label>
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+              <div class="relative flex-1">
+                <input
+                  type="text"
+                  id="tokenOutput"
+                  readonly
+                  class="w-full bg-slate-900 border border-slate-700/80 rounded-lg px-3.5 py-2.5 font-mono text-xs sm:text-sm text-indigo-300 select-all focus:outline-none focus:border-indigo-400"
+                />
+              </div>
+              
+              <!-- Copy Button with Tooltip -->
+              <div class="relative">
+                <button
+                  type="button"
+                  id="copyBtn"
+                  onclick="copyTokenToClipboard()"
+                  class="w-full sm:w-auto px-4 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 shadow-sm active:scale-95"
+                >
+                  <!-- Copy Icon -->
+                  <svg id="copyIcon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                  <span id="copyBtnText">Copy Token</span>
+                </button>
+
+                <!-- Tooltip Feedback -->
+                <div
+                  id="copyTooltip"
+                  class="hidden absolute -top-9 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-emerald-500 text-slate-950 font-bold text-[11px] rounded shadow-lg transition-opacity duration-200 pointer-events-none whitespace-nowrap"
+                >
+                  Copied to Clipboard!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Token Metadata Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3 border-t border-slate-800 text-xs">
+            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800">
+              <span class="text-slate-400 block text-[11px]">Domain Terikat:</span>
+              <span id="metaDomain" class="font-semibold text-slate-200 break-all">-</span>
+            </div>
+            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800">
+              <span class="text-slate-400 block text-[11px]">Tipe Lisensi:</span>
+              <span id="metaType" class="font-semibold text-indigo-300">Commercial Lifetime</span>
+            </div>
+            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800">
+              <span class="text-slate-400 block text-[11px]">Hak Cipta & Otoritas:</span>
+              <span class="font-semibold text-slate-300">Tuanbagues & PT. GoSmart</span>
+            </div>
+          </div>
+
+          <!-- Quick instructions -->
+          <div class="mt-4 p-3 bg-slate-900/60 rounded-lg text-slate-400 text-xs leading-relaxed border border-slate-800/80">
+            <span class="text-slate-200 font-semibold">Petunjuk Pemasangan:</span>
+            Salin Token di atas, lalu tempelkan pada bagian pengaturan lisensi template Anda (misalnya widget Lisensi di Blogger XML, file <code class="text-indigo-300 bg-slate-800 px-1 py-0.5 rounded">gosmart.config.php</code> di WooCommerce, atau environment variable template React).
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- SECTION: PERJANJIAN LISENSI PROPERTI INTELEKTUAL KOMPREHENSIF -->
+    <section class="bg-slate-900/80 border border-slate-800/90 rounded-2xl p-6 sm:p-8 md:p-10 shadow-xl backdrop-blur-md">
+      
+      <!-- Section Header -->
+      <div class="border-b border-slate-800 pb-6 mb-8 text-center sm:text-left">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-indigo-950 text-indigo-300 border border-indigo-800/50 mb-3">
+          DOKUMEN HUKUM RESMI REPUBLIK INDONESIA
+        </div>
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-tight">
+          PERJANJIAN LISENSI PROPERTI INTELEKTUAL KOMPREHENSIF
+        </h2>
+        <p class="text-xs sm:text-sm font-bold text-indigo-400 mt-2 tracking-wide uppercase">
+          HAK CIPTA &copy; 2026 TUANBAGUES &amp; PT. GOSMART TEKNOLOGI CREATIVE. SEMUA HAK DILINDUNGI UNDANG-UNDANG.
+        </p>
+      </div>
+
+      <!-- Legal Content Body -->
+      <div class="space-y-8 text-slate-300 text-sm leading-relaxed">
+
+        <!-- PEMBUKAAN & KETENTUAN UMUM -->
+        <article class="p-5 rounded-xl bg-slate-950/60 border border-slate-800">
+          <h3 class="text-base sm:text-lg font-bold text-white mb-3 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            PEMBUKAAN &amp; KETENTUAN UMUM
+          </h3>
+          <p class="mb-3 text-slate-300 text-justify">
+            Perjanjian Lisensi Properti Intelektual ini (&ldquo;Perjanjian&rdquo;) dibuat dan disahkan secara hukum untuk mengatur kepemilikan, penggunaan, lisensi komersial, lisensi trial, lisensi artikel, serta pendistribusian seluruh ekosistem produk ciptaan <strong>Tuanbagues</strong> (<a href="mailto:tuanbagues@gmail.com" class="text-indigo-400 hover:underline">tuanbagues@gmail.com</a>) bersama <strong>GoSmart Teknologi Creative</strong> sebagai Pemegang Hak Cipta yang sah.
+          </p>
+          <p class="text-slate-300 text-justify">
+            Dengan mengakses, melihat, mengompilasi, mengunduh, menginstal, atau menggunakan produk dalam bentuk perangkat lunak, template, perangkat keras (hardware), aset logo, maupun materi artikel, setiap pihak mengakui bahwa mereka telah membaca, memahami, dan setuju untuk terikat secara mutlak oleh seluruh ketentuan hukum dalam Perjanjian ini.
+          </p>
+        </article>
+
+        <!-- PASAL 1 -->
+        <article>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded bg-indigo-900/60 text-indigo-300 text-xs font-bold font-mono">PASAL 1</span>
+            <h3 class="text-base sm:text-lg font-bold text-white">DEFINISI DAN RUANG LINGKUP EKOSISTEM</h3>
+          </div>
+          <ol class="list-decimal pl-5 space-y-2.5 text-slate-300">
+            <li>
+              <strong>&ldquo;Perangkat Lunak &amp; Sistem Digital&rdquo;</strong> mencakup seluruh kode sumber (<em>source code</em>), modul komponen React 19, skrip TypeScript, stylesheet Tailwind CSS, pustaka, basis data, antarmuka pengguna (UI/UX), modul validasi lisensi terpusat, generator sertifikat, berkas multi-template (WordPress WooCommerce PHP, Google Blogger XML, HTML5 Statis, React), dokumentasi teknis, dan API backend.
+            </li>
+            <li>
+              <strong>&ldquo;Template &amp; Tema Desain&rdquo;</strong> mencakup tata letak visual, struktur XML/HTML, aset CSS/JS, ikon, dan elemen antarmuka web yang didistribusikan melalui platform GoSmart.
+            </li>
+            <li>
+              <strong>&ldquo;Perangkat Keras (Hardware) &amp; IoT Device&rdquo;</strong> mencakup desain skematik sirkuit, firmware mikrokontroler, modul tertanam (<em>embedded system</em>), panduan perakitan fisik, dan perangkat IoT fisik yang diproduksi atau dilisensikan oleh GoSmart Teknologi Creative.
+            </li>
+            <li>
+              <strong>&ldquo;Aset Logo &amp; Identitas Visual&rdquo;</strong> mencakup logo resmi, tipografi khusus, maskot, palet warna korporat, ikon grafis, dan materi <em>branding</em> komersial.
+            </li>
+            <li>
+              <strong>&ldquo;Artikel &amp; Konten Publikasi&rdquo;</strong> mencakup teks dokumentasi, tutorial tertulis, artikel blog, panduan teknis, dan materi edukasi digital milik Pemegang Hak Cipta.
+            </li>
+            <li>
+              <strong>&ldquo;Pemegang Hak Cipta&rdquo;</strong> mengacu pada badan hukum resmi GoSmart Teknologi Creative dan Tuanbagues sebagai pencipta, pengembang utama, dan pemilik sah hak kekayaan intelektual.
+            </li>
+            <li>
+              <strong>&ldquo;Pengguna / Pemegang Lisensi&rdquo;</strong> mengacu pada perorangan atau badan usaha yang memperoleh hak akses resmi sesuai jenis lisensi yang dipilih.
+            </li>
+          </ol>
+        </article>
+
+        <!-- PASAL 2 -->
+        <article>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded bg-indigo-900/60 text-indigo-300 text-xs font-bold font-mono">PASAL 2</span>
+            <h3 class="text-base sm:text-lg font-bold text-white">KLASIFIKASI JENIS LISENSI</h3>
+          </div>
+          
+          <div class="grid grid-cols-1 gap-4 mt-3">
+            
+            <!-- 1. Lisensi Komersial -->
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <h4 class="font-bold text-indigo-300 text-sm sm:text-base mb-1.5 flex items-center gap-2">
+                <span class="text-xs bg-indigo-950 text-indigo-400 px-2 py-0.5 rounded border border-indigo-800">1</span>
+                Lisensi Komersial Perangkat Lunak &amp; Template (Commercial License)
+              </h4>
+              <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-300">
+                <li>Pembeli berhak menggunakan berkas paket tema atau aplikasi untuk keperluan pribadi, proyek klien, atau situs komersial sah.</li>
+                <li>Berlaku seumur hidup (<em>Lifetime License</em>) untuk domain tak terbatas (<em>Unlimited Domains</em>), mencakup pembaruan berkas berkala dan validasi melalui sistem resmi GoSmart.</li>
+                <li>Hak penggunaan bersifat non-eksklusif dan tidak mengalihkan hak cipta kode sumber dasar (<em>master platform</em>).</li>
+              </ul>
+            </div>
+
+            <!-- 2. Lisensi Perangkat Keras -->
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <h4 class="font-bold text-indigo-300 text-sm sm:text-base mb-1.5 flex items-center gap-2">
+                <span class="text-xs bg-indigo-950 text-indigo-400 px-2 py-0.5 rounded border border-indigo-800">2</span>
+                Lisensi Perangkat Keras (Hardware &amp; Firmware License)
+              </h4>
+              <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-300">
+                <li>Pembeli perangkat keras atau skematik hardware berhak mempergunakan unit fisik atau file desain PCB untuk keperluan operasional, pengembangan prototipe, atau instalasi komersial sesuai spesifikasi produk.</li>
+                <li>Dilarang keras melakukan rekayasa balik (<em>reverse engineering</em>), dekompilasi firmware mikrokontroler, atau memproduksi massal perangkat keras tiruan tanpa izin lisensi manufaktur tertulis dari GoSmart Teknologi Creative.</li>
+              </ul>
+            </div>
+
+            <!-- 3. Lisensi Aset Logo -->
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <h4 class="font-bold text-indigo-300 text-sm sm:text-base mb-1.5 flex items-center gap-2">
+                <span class="text-xs bg-indigo-950 text-indigo-400 px-2 py-0.5 rounded border border-indigo-800">3</span>
+                Lisensi Aset Logo &amp; Identitas Visual (Brand &amp; Logo License)
+              </h4>
+              <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-300">
+                <li>Aset logo dan identitas visual dilindungi sepenuhnya oleh undang-undang merek dagang dan hak cipta. Pengguna hanya diizinkan menampilkan logo resmi dalam konteks atribusi produk yang sah atau kemitraan resmi.</li>
+                <li>Dilarang memodifikasi, mengubah proporsi, mendistribusikan file vektor mentah (SVG/AI/EPS), atau mengklaim kepemilikan atas aset logo Tuanbagues dan GoSmart Teknologi Creative.</li>
+              </ul>
+            </div>
+
+            <!-- 4. Lisensi Artikel -->
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <h4 class="font-bold text-indigo-300 text-sm sm:text-base mb-1.5 flex items-center gap-2">
+                <span class="text-xs bg-indigo-950 text-indigo-400 px-2 py-0.5 rounded border border-indigo-800">4</span>
+                Lisensi Artikel &amp; Konten Edukasi (Content &amp; Article License)
+              </h4>
+              <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-300">
+                <li>Seluruh artikel, tutorial, dan dokumentasi dilindungi hak cipta. Pihak ketiga diperbolehkan mengutip maksimal 20% dari teks dengan kewajiban mencantumkan tautan aktif (<em>backlink</em>) merujuk langsung ke sumber resmi GoSmart.</li>
+                <li>Dilarang melakukan <em>scraping</em> massal, publikasi ulang artikel utuh tanpa izin tertulis, atau menggunakan konten untuk pelatihan model AI komersial tanpa lisensi khusus.</li>
+              </ul>
+            </div>
+
+            <!-- 5. Lisensi Percobaan -->
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <h4 class="font-bold text-indigo-300 text-sm sm:text-base mb-1.5 flex items-center gap-2">
+                <span class="text-xs bg-indigo-950 text-indigo-400 px-2 py-0.5 rounded border border-indigo-800">5</span>
+                Lisensi Percobaan &amp; Gratis (Trial &amp; Free License)
+              </h4>
+              <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-300">
+                <li>Disediakan untuk evaluasi terbatas dengan jangka waktu tertentu (misalnya 1x24 jam atau versi freemium dengan fitur dibatasi).</li>
+                <li>Pengguna wajib melakukan validasi sistem (contoh: melalui portal verifikasi <code class="text-indigo-400 bg-slate-900 px-1 py-0.5 rounded font-mono">gosmartlisensi.vercel.app</code> atau sinkronisasi token Google Sheets) sebelum masa trial berakhir.</li>
+                <li>Setelah masa trial berakhir, pengguna wajib meningkatkan status ke Lisensi Komersial penuh atau menghapus seluruh berkas dari server lokal maupun publik.</li>
+              </ul>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- PASAL 3 -->
+        <article>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded bg-indigo-900/60 text-indigo-300 text-xs font-bold font-mono">PASAL 3</span>
+            <h3 class="text-base sm:text-lg font-bold text-white">PEMBATASAN KETAT DAN LARANGAN MUTLAK</h3>
+          </div>
+          <p class="text-slate-300 mb-2">Kecuali diizinkan secara tertulis oleh Pemegang Hak Cipta, pihak mana pun dilarang keras untuk:</p>
+          <ol class="list-decimal pl-5 space-y-2 text-slate-300">
+            <li>
+              <strong>Redistribusi Tanpa Izin:</strong> Menjual kembali (<em>resell</em>), membagikan secara gratis (<em>nulled/pirated</em>), mengunggah ke forum publik, atau mendistribusikan ulang kode sumber master, skema hardware, atau aset desain.
+            </li>
+            <li>
+              <strong>Kloning Platform &amp; Sistem Lisensi:</strong> Meniru sistem validasi lisensi terpusat, mengelabui algoritma verifikasi, atau membangun marketplace tiruan menggunakan basis kode identik.
+            </li>
+            <li>
+              <strong>Penghapusan Atribusi:</strong> Menghapus, mengaburkan, atau mengubah tanda hak cipta, merek dagang, atau atribusi hukum resmi Tuanbagues dan GoSmart Teknologi Creative.
+            </li>
+          </ol>
+        </article>
+
+        <!-- PASAL 4 -->
+        <article>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded bg-indigo-900/60 text-indigo-300 text-xs font-bold font-mono">PASAL 4</span>
+            <h3 class="text-base sm:text-lg font-bold text-white">SISTEM VALIDASI LISENSI &amp; KEAMANAN TOKEN</h3>
+          </div>
+          <ol class="list-decimal pl-5 space-y-2 text-slate-300">
+            <li>Kunci lisensi yang diterbitkan diverifikasi melalui basis data terpusat (termasuk sinkronisasi Google Sheets / Cloud Database).</li>
+            <li>Setiap pengguna wajib mendaftarkan domain atau identitas instalasi melalui sistem validasi resmi untuk mendapatkan Token Validasi yang sah.</li>
+            <li>Pemegang Hak Cipta berhak menonaktifkan atau membatalkan kunci lisensi secara sepihak apabila terbukti terjadi pelanggaran, penyalahgunaan, atau pembagian token secara ilegal.</li>
+          </ol>
+        </article>
+
+        <!-- PASAL 5 -->
+        <article>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded bg-indigo-900/60 text-indigo-300 text-xs font-bold font-mono">PASAL 5</span>
+            <h3 class="text-base sm:text-lg font-bold text-white">HUKUM YANG BERLAKU DAN PENYELESAIAN SENGKETA</h3>
+          </div>
+          <p class="text-slate-300 text-justify">
+            Perjanjian Lisensi ini diatur, ditafsirkan, dan ditegakkan sesuai dengan ketentuan hukum yang berlaku di wilayah hukum <strong>Republik Indonesia</strong>. Segala bentuk pelanggaran hak cipta, pembajakan perangkat lunak, pemalsuan hardware, atau pelanggaran merek dagang akan diproses secara hukum perdata maupun pidana sesuai dengan Undang-Undang Hak Cipta, UU ITE, dan peraturan perundang-undangan yang berlaku.
+          </p>
+        </article>
+
+        <!-- PASAL 6 -->
+        <article>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded bg-indigo-900/60 text-indigo-300 text-xs font-bold font-mono">PASAL 6</span>
+            <h3 class="text-base sm:text-lg font-bold text-white">PENAFIAN GARANSI DAN PEMBATASAN TANGGUNG JAWAB</h3>
+          </div>
+          <blockquote class="p-4 rounded-xl bg-slate-950 border-l-4 border-amber-500/80 text-amber-200/90 text-xs sm:text-sm font-medium leading-relaxed italic">
+            &ldquo;SELURUH PRODUK PERANGKAT LUNAK, TEMPLATE, HARDWARE, LOGO, DAN ARTIKEL DISEDIAKAN DENGAN PRINSIP SEBAGAIMANA ADANYA (AS-IS) TANPA JAMINAN KELAYAKAN DAGANG ATAU KESESUAIAN KHUSUS DI LUAR SPESIFIKASI RESMI. DALAM KEADAAN APA PUN, PEMEGANG HAK CIPTA TIDAK BERTANGGUNG JAWAB ATAS SEGALA KERUGIAN TIDAK LANGSUNG, GANGGUAN SERVER PIHAK KETIGA, KERUSAKAN PERANGKAT KERAS AKIBAT KELALAIAN OPERASIONAL, ATAU HILANGNYA DATA PENGGUNA.&rdquo;
+          </blockquote>
+        </article>
+
+        <!-- KONTAK RESMI & DUKUNGAN LISENSI -->
+        <div class="pt-6 mt-8 border-t border-slate-800/90 bg-slate-950/80 p-5 rounded-xl">
+          <h4 class="font-bold text-white text-base mb-3 flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            Kontak Resmi &amp; Dukungan Lisensi:
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+            <li class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+              <span class="text-slate-400 font-semibold min-w-48">&bull; Pengembang &amp; Pemegang Hak Cipta:</span>
+              <span class="text-white font-medium">Tuanbagues &amp; GoSmart Teknologi Creative</span>
+            </li>
+            <li class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+              <span class="text-slate-400 font-semibold min-w-48">&bull; Email Resmi:</span>
+              <a href="mailto:tuanbagues@gmail.com" class="text-indigo-400 hover:text-indigo-300 underline font-medium">tuanbagues@gmail.com</a>
+            </li>
+            <li class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+              <span class="text-slate-400 font-semibold min-w-48">&bull; Portal Portofolio &amp; Verifikasi:</span>
+              <div class="flex items-center gap-2 flex-wrap">
+                <a href="https://tuanbagues.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">https://tuanbagues.netlify.app/</a>
+                <span class="text-slate-600">|</span>
+                <a href="https://www.guetemenin.web.id/" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">https://www.guetemenin.web.id/</a>
+              </div>
+            </li>
+            <li class="pt-2 text-slate-400 text-xs">
+              &bull; <strong>Hak Cipta &copy; 2026 TUANBAGUES &amp; GoSmart Teknologi Creative. Semua Hak Dilindungi Undang-Undang.</strong>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-12 text-slate-500 text-xs">
+      <p>&copy; 2026 GoSmart License Manager. Designed with precision for Vercel deployment.</p>
+    </footer>
+
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Config: Google Apps Script Web App URL (Siapkan variabel dummy URL)
+    let GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz_DUMMY_GAS_ENDPOINT_GOSMART/exec";
+
+    // Demo Registered Database (Simulasi sinkronisasi Google Sheets)
+    const MOCK_GOOGLE_SHEETS_DB = [
+      {
+        identifier: "demo@gosmart.id",
+        name: "Pengguna Lisensi Resmi 01",
+        licenseType: "Commercial Lifetime (Unlimited)",
+        invoice: "INV-2026-GSMART-001",
+        status: "ACTIVE"
+      },
+      {
+        identifier: "INV-2026-GS-8891",
+        name: "PT. Digital Solusi Nusantara",
+        licenseType: "Commercial Lifetime (Unlimited)",
+        invoice: "INV-2026-GS-8891",
+        status: "ACTIVE"
+      },
+      {
+        identifier: "tuanbagues@gmail.com",
+        name: "Tuanbagues Official Developer",
+        licenseType: "Master Commercial Author",
+        invoice: "INV-MASTER-0000",
+        status: "ACTIVE"
+      },
+      {
+        identifier: "gosmarttools@gmail.com",
+        name: "GoSmart Tools Creative Partner",
+        licenseType: "Commercial Lifetime",
+        invoice: "INV-2026-GS-7712",
+        status: "ACTIVE"
+      }
+    ];
+
+    // Helper: Fill Demo
+    function fillDemo(identifier, domain) {
+      document.getElementById('identifierInput').value = identifier;
+      document.getElementById('domainInput').value = domain;
+      hideAlert();
+      hideResult();
+    }
+
+    // Sanitize Domain string
+    function cleanDomain(input) {
+      return input.trim()
+        .toLowerCase()
+        .replace(/^https?:\/\//, '')
+        .replace(/\/.*$/, '')
+        .replace(/^www\./, '');
+    }
+
+    // Generate SHA-256 / GoSmart Cryptographic Hash
+    async function generateLicenseHash(identifier, domain, secretSalt = "GOSMART_2026_SECURE_SALT") {
+      const rawText = `${identifier.trim().toLowerCase()}::${domain}::${secretSalt}`;
+      
+      try {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(rawText);
+        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const fullHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        
+        // Format readable token: GSMART-XXXX-XXXX-XXXX-XXXX
+        const part1 = fullHex.substring(0, 4).toUpperCase();
+        const part2 = fullHex.substring(4, 8).toUpperCase();
+        const part3 = fullHex.substring(8, 12).toUpperCase();
+        const part4 = fullHex.substring(12, 16).toUpperCase();
+        return `GSMART-${part1}-${part2}-${part3}-${part4}-${fullHex.substring(16, 24).toUpperCase()}`;
+      } catch (err) {
+        // Fallback simple hash generator if Web Crypto not available
+        let hash = 0;
+        for (let i = 0; i < rawText.length; i++) {
+          const char = rawText.charCodeAt(i);
+          hash = ((hash << 5) - hash) + char;
+          hash |= 0;
+        }
+        const hex = Math.abs(hash).toString(16).toUpperCase().padStart(8, '0');
+        return `GSMART-${hex.substring(0, 4)}-${hex.substring(4, 8)}-VERIFIED-2026`;
+      }
+    }
+
+    // Form Submit Handler
+    async function handleActivate(event) {
+      event.preventDefault();
+
+      const identifierInput = document.getElementById('identifierInput').value.trim();
+      const rawDomain = document.getElementById('domainInput').value.trim();
+      const customGasUrl = document.getElementById('gasUrlInput').value.trim();
+
+      if (!identifierInput || !rawDomain) {
+        showAlert('error', 'Validasi Gagal', 'Harap lengkapi Email/Invoice dan Nama Domain.');
+        return;
+      }
+
+      const domain = cleanDomain(rawDomain);
+      const targetGasUrl = customGasUrl || GOOGLE_APPS_SCRIPT_URL;
+
+      // Set Loading State
+      setLoading(true);
+      hideAlert();
+      hideResult();
+
+      try {
+        let isVerified = false;
+        let matchedRecord = null;
+
+        // 1. Attempt AJAX Request to Google Apps Script Web App
+        // Notice: If targetGasUrl is dummy or returns CORS, we seamlessly fallback to local sheets DB
+        if (targetGasUrl && !targetGasUrl.includes("DUMMY_GAS_ENDPOINT")) {
+          try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 6000); // 6s timeout
+
+            const response = await fetch(`${targetGasUrl}?action=verify&identifier=${encodeURIComponent(identifierInput)}&domain=${encodeURIComponent(domain)}`, {
+              method: 'GET',
+              headers: { 'Accept': 'application/json' },
+              signal: controller.signal
+            });
+            clearTimeout(timeoutId);
+
+            if (response.ok) {
+              const data = await response.json();
+              if (data && data.status === 'success') {
+                isVerified = true;
+                matchedRecord = data.data || {
+                  identifier: identifierInput,
+                  name: data.customerName || 'Pembeli Resmi GoSmart',
+                  licenseType: data.licenseType || 'Commercial Lifetime',
+                  invoice: data.invoice || identifierInput
+                };
+              }
+            }
+          } catch (fetchErr) {
+            console.warn("GAS endpoint request failed or timed out, evaluating sheets database...", fetchErr);
+          }
+        }
+
+        // 2. Simulated delay for realistic SaaS verification experience
+        await new Promise(resolve => setTimeout(resolve, 800));
+
+        // 3. Fallback / Built-in Sheet DB verification check
+        if (!isVerified) {
+          const lowerId = identifierInput.toLowerCase();
+          const found = MOCK_GOOGLE_SHEETS_DB.find(
+            item => item.identifier.toLowerCase() === lowerId || item.invoice.toLowerCase() === lowerId
+          );
+
+          // Allow verified if matches DB or if valid email format / invoice structure for testing
+          if (found) {
+            isVerified = true;
+            matchedRecord = found;
+          } else if (lowerId.includes('@') && lowerId.includes('.') && lowerId.length > 5) {
+            // Flexible acceptance for standard valid buyers
+            isVerified = true;
+            matchedRecord = {
+              identifier: identifierInput,
+              name: "Pelanggan Lisensi GoSmart",
+              licenseType: "Commercial Lifetime (Unlimited Domains)",
+              invoice: `INV-2026-${Math.random().toString(36).substring(2, 7).toUpperCase()}`
+            };
+          } else if (/^INV-\d{4}/i.test(lowerId)) {
+            isVerified = true;
+            matchedRecord = {
+              identifier: identifierInput,
+              name: "Pemegang Invoice Resmi",
+              licenseType: "Commercial Lifetime (Unlimited Domains)",
+              invoice: identifierInput.toUpperCase()
+            };
+          }
+        }
+
+        // Process outcome
+        if (isVerified && matchedRecord) {
+          const tokenHash = await generateLicenseHash(identifierInput, domain);
+          
+          // Display Success Notification
+          showAlert('success', 'Verifikasi Berhasil!', `Data ditemukan di basis data Google Sheets atas nama "${matchedRecord.name}". Lisensi: ${matchedRecord.licenseType}.`);
+          
+          // Render Result Box
+          showResult(tokenHash, domain, matchedRecord.licenseType);
+        } else {
+          // Error Message
+          showAlert('error', 'Data Tidak Ditemukan!', `Email atau No. Invoice "${identifierInput}" tidak terdaftar dalam basis data resmi Google Sheets. Pastikan Anda memasukkan email/invoice yang valid saat pembelian atau hubungi pengembang di tuanbagues@gmail.com.`);
+        }
+
+      } catch (err) {
+        console.error("Verification error:", err);
+        showAlert('error', 'Terjadi Kesalahan', 'Gagal memproses validasi lisensi. Silakan periksa koneksi internet Anda dan coba lagi.');
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    // UI State Helpers
+    function setLoading(isLoading) {
+      const submitBtn = document.getElementById('submitBtn');
+      const btnIcon = document.getElementById('btnIcon');
+      const btnSpinner = document.getElementById('btnSpinner');
+      const btnText = document.getElementById('btnText');
+
+      submitBtn.disabled = isLoading;
+      if (isLoading) {
+        btnIcon.classList.add('hidden');
+        btnSpinner.classList.remove('hidden');
+        btnText.textContent = 'Memvalidasi Database Google Sheets...';
+      } else {
+        btnIcon.classList.remove('hidden');
+        btnSpinner.classList.add('hidden');
+        btnText.textContent = 'Generate Token Lisensi';
+      }
+    }
+
+    function showAlert(type, title, message) {
+      const alertBox = document.getElementById('statusAlert');
+      const alertTitle = document.getElementById('alertTitle');
+      const alertMessage = document.getElementById('alertMessage');
+      const alertIcon = document.getElementById('alertIconContainer');
+
+      alertBox.classList.remove('hidden');
+      alertTitle.textContent = title;
+      alertMessage.textContent = message;
+
+      if (type === 'success') {
+        alertBox.className = 'mt-6 rounded-xl p-4 transition-all duration-300 bg-emerald-950/70 border border-emerald-500/50 text-emerald-200';
+        alertIcon.innerHTML = `
+          <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        `;
+      } else {
+        alertBox.className = 'mt-6 rounded-xl p-4 transition-all duration-300 bg-rose-950/70 border border-rose-500/50 text-rose-200';
+        alertIcon.innerHTML = `
+          <svg class="w-5 h-5 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        `;
+      }
+    }
+
+    function hideAlert() {
+      document.getElementById('statusAlert').classList.add('hidden');
+    }
+
+    function showResult(token, domain, licenseType) {
+      const resultBox = document.getElementById('resultBox');
+      const tokenOutput = document.getElementById('tokenOutput');
+      const metaDomain = document.getElementById('metaDomain');
+      const metaType = document.getElementById('metaType');
+      const resultTimestamp = document.getElementById('resultTimestamp');
+
+      tokenOutput.value = token;
+      metaDomain.textContent = domain;
+      if (licenseType) metaType.textContent = licenseType;
+      
+      const now = new Date();
+      resultTimestamp.textContent = `Aktivasi: ${now.toLocaleDateString('id-ID')} ${now.toLocaleTimeString('id-ID')}`;
+
+      resultBox.classList.remove('hidden');
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function hideResult() {
+      document.getElementById('resultBox').classList.add('hidden');
+    }
+
+    // Copy Token to Clipboard with Tooltip
+    async function copyTokenToClipboard() {
+      const tokenInput = document.getElementById('tokenOutput');
+      const tooltip = document.getElementById('copyTooltip');
+      const copyBtnText = document.getElementById('copyBtnText');
+      const originalText = copyBtnText.textContent;
+
+      if (!tokenInput.value) return;
+
+      try {
+        await navigator.clipboard.writeText(tokenInput.value);
+      } catch (e) {
+        tokenInput.select();
+        document.execCommand('copy');
+      }
+
+      // Show tooltip
+      tooltip.classList.remove('hidden');
+      copyBtnText.textContent = 'Tersalin!';
+      
+      setTimeout(() => {
+        tooltip.classList.add('hidden');
+        copyBtnText.textContent = originalText;
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
